@@ -24,7 +24,8 @@ $DarkGrayishViolet: hsl(270, 7%, 64%) ;//(Paragraph)
 
 //Gradients
 
-//These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+//These two colors are the vibrant background colors you see 
+//throughout the design and are applied as a linear gradient:
 
 $LightMagenta: hsl(293, 100%, 63%);
 $LightViolet: hsl(264, 100%, 61%);
@@ -34,29 +35,71 @@ $LightViolet: hsl(264, 100%, 61%);
 $White: hsl(0, 0%, 100%);
 $LightGrayishViolet : hsl(270, 20%, 96%); //(app background)
 $VeryDarkDesaturatedViolet : hsl(271, 36%, 24%); //(submit button background)
-$VeryLightMagenta : hsl(289, 100%, 72%); (radio button outline)
+$VeryLightMagenta : hsl(289, 100%, 72%); //(radio button outline)
 
 //Typography Body
 
-$FontTypography size: 16px;
-
+$FontTypographysize: 16px;
 
 html, body {
     margin:0;
     padding:0;
     border:0;
-    background-color: ;
 }
 
-.app { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: "left-side right-side";
-    .left-side { grid-area: Left-side; }
-    .right-side { grid-area: Right-side; }
+.app {
 
+.background {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    width: 800px;
+    height: 600px;
+    margin:auto;
     background-color: $LightGrayishViolet;
-    width: 100hv;
+    border: 2px solid black; 
+
+// Background decoration
+    .deco1 {
+        position: absolute;
+        overflow: hidden;
+        bottom: 73px;
+        left: -50px;
+        background: linear-gradient(227deg, #e942ff, #8838ff);
+        height: 681px;
+        width: 344px;
+        border-radius: 174px;;
+    }
+
+    .deco2 {
+        position: absolute;
+        overflow: hidden;
+        top: 251px;
+        right: -49px;
+        background-color: #e6e3e33f;
+        box-shadow: 20px 20px 20px 20px red;
+        height: 681px;
+        width: 300px;
+        border-radius: 150px;
+    }
+    
+}
+    .phone-wrapper {
+        z-index: 100;
+        background-color: rgba(196, 97, 97, 0.561);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+        border:2px solid green;
+       
+        .phone {
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        }
+    }
+
 }

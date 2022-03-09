@@ -1,6 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&display=swap");
+/*
+font-family: 'Outfit', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+Weights: 400, 500, 700
+*/
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.app .background {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background-color: #f5f3f7;
+  border: 2px solid black;
+}
+
+.app .background .deco1 {
+  position: absolute;
+  overflow: hidden;
+  bottom: 73px;
+  left: -50px;
+  background: linear-gradient(227deg, #e942ff, #8838ff);
+  height: 681px;
+  width: 344px;
+  border-radius: 174px;
+}
+
+.app .background .deco2 {
+  position: absolute;
+  overflow: hidden;
+  top: 251px;
+  right: -49px;
+  background-color: #e6e3e33f;
+  -webkit-box-shadow: 20px 20px 20px 20px red;
+          box-shadow: 20px 20px 20px 20px red;
+  height: 681px;
+  width: 300px;
+  border-radius: 150px;
+}
+
+.app .phone-wrapper {
+  z-index: 100;
+  background-color: rgba(196, 97, 97, 0.561);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  width: 90%;
+  border: 2px solid green;
+}
+
+.app .phone-wrapper .phone {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
