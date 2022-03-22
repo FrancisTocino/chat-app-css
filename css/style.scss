@@ -46,60 +46,65 @@ html, body {
     padding:0;
     border:0;
 }
+body {
+    overflow:hidden;
+    position:relative;
+    height:500px;
+}
 
-.app {
-
-.background {
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    width: 800px;
-    height: 600px;
-    margin:auto;
-    background-color: $LightGrayishViolet;
-    border: 2px solid black; 
 
 // Background decoration
-    .deco1 {
+    .deco-left {
         position: absolute;
         overflow: hidden;
-        bottom: 73px;
-        left: -50px;
+        left: -66px;
+        top: -212px;
         background: linear-gradient(227deg, #e942ff, #8838ff);
         height: 681px;
         width: 344px;
-        border-radius: 174px;;
+        border-radius: 174px;
+        z-index:-1;
     }
 
-    .deco2 {
+    .deco-right {
         position: absolute;
         overflow: hidden;
-        top: 251px;
-        right: -49px;
-        background-color: #e6e3e33f;
-        box-shadow: 20px 20px 20px 20px red;
+        background-color: $LightGrayishViolet;
         height: 681px;
-        width: 300px;
-        border-radius: 150px;
+        width: 344px;
+        top: 85px;
+        right:-200px;
+        border-radius: 174px;
+        z-index:-1;
     }
     
-}
     .phone-wrapper {
-        z-index: 100;
-        background-color: rgba(196, 97, 97, 0.561);
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        height: 90%;
-        width: 90%;
-        border:2px solid green;
-       
-        .phone {
-        background-color: aqua;
-        height: 200px;
-        width: 200px;
+        align-items: center ;
+        height: 100vh;
+        width: 100vw;
+        .two-columns{
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1.1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+                "phone text"; 
+            height: 90vh;
+            width: 90vw;
+        
+            .phone { 
+                grid-area: phone; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @import 'celular';
+            }
+            .text {
+                grid-area: text;
+                //background-color: hsl(27, 98%, 65%);
+            }
         }
     }
-
-}

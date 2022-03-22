@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC;EACF,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,KAAK;EACZ,gBAAgB,EAAE,UAAU;EAC5B,MAAM,EAAC,eAAe;CACvB",
+    "sources": [
+        "celular.scss"
+    ],
+    "names": [],
+    "file": "celular.css"
+}

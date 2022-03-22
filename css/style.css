@@ -12,44 +12,37 @@ html, body {
   border: 0;
 }
 
-.app .background {
-  position: relative;
+body {
   overflow: hidden;
-  z-index: 0;
-  width: 800px;
-  height: 600px;
-  margin: auto;
-  background-color: #f5f3f7;
-  border: 2px solid black;
+  position: relative;
+  height: 500px;
 }
 
-.app .background .deco1 {
+.deco-left {
   position: absolute;
   overflow: hidden;
-  bottom: 73px;
-  left: -50px;
+  left: -66px;
+  top: -212px;
   background: linear-gradient(227deg, #e942ff, #8838ff);
   height: 681px;
   width: 344px;
   border-radius: 174px;
+  z-index: -1;
 }
 
-.app .background .deco2 {
+.deco-right {
   position: absolute;
   overflow: hidden;
-  top: 251px;
-  right: -49px;
-  background-color: #e6e3e33f;
-  -webkit-box-shadow: 20px 20px 20px 20px red;
-          box-shadow: 20px 20px 20px 20px red;
+  background-color: #f5f3f7;
   height: 681px;
-  width: 300px;
-  border-radius: 150px;
+  width: 344px;
+  top: 85px;
+  right: -200px;
+  border-radius: 174px;
+  z-index: -1;
 }
 
-.app .phone-wrapper {
-  z-index: 100;
-  background-color: rgba(196, 97, 97, 0.561);
+.phone-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,14 +56,48 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90%;
-  width: 90%;
-  border: 2px solid green;
+  height: 100vh;
+  width: 100vw;
 }
 
-.app .phone-wrapper .phone {
-  background-color: aqua;
-  height: 200px;
-  width: 200px;
+.phone-wrapper .two-columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1.1fr;
+      grid-template-rows: 1.1fr;
+  gap: 0px 0px;
+      grid-template-areas: "phone text";
+  height: 90vh;
+  width: 90vw;
+}
+
+.phone-wrapper .two-columns .phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: phone;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-wrapper .two-columns .phone .cell {
+  width: 300px;
+  height: 600px;
+  background-color: chartreuse;
+  border: 2px solid black;
+}
+
+.phone-wrapper .two-columns .text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
 }
 /*# sourceMappingURL=style.css.map */
