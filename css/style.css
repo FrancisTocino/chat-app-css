@@ -106,6 +106,7 @@ body {
   position: absolute;
   width: 226px;
   height: 365px;
+  border-radius: 20px;
   background: #EDEBEB;
 }
 
@@ -136,21 +137,21 @@ body {
   top: 0px;
   left: 0px;
   z-index: 50;
-  width: 230px;
+  width: 227px;
   height: 67px;
   background: linear-gradient(93.08deg, #8E3AFE 9.61%, #DD42FE 95.15%);
-  border-radius: 21px 24px 9px 5px;
+  border-radius: 21px 21px 9px 5px;
 }
 
 .phone-wrapper .two-columns .phone .app-header-blanco {
   position: absolute;
   top: 0px;
-  left: 52px;
+  left: 50px;
   z-index: 56;
   width: 132px;
   height: 25px;
   background: #FFFFFF;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .phone-wrapper .two-columns .text {
