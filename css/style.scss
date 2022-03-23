@@ -96,11 +96,11 @@ body {
             width: 90vw;
         
             .phone { 
-                grid-area: phone; 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @import 'celular';
+            grid-area: phone; 
+            position: relative;
+            top: 54px;
+            left: 165px;
+                @import '_celular2';
             }
             .text {
                 grid-area: text;
